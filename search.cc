@@ -59,9 +59,6 @@ float get_direction_of_color(cv::Mat pic, float fov, int hue, int tolerance) {
     
     // Returns a sentinel if the color is not in frame
     if (column < 0) {
-        cv::imshow("raw", pic);
-        cv::imshow("mask", color_mask);
-        cv::waitKey(1);
         return 666.0;
     }
 
